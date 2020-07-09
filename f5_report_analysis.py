@@ -108,4 +108,3 @@ def analyze_f5_report(f5_report):
 
 if __name__ == "__main__":
     analyze_f5_report(args.f5_report)
-    #analyze_f5_report('C:/cases/C3177578/mar_03/F5DiagnosticsReport.html')
