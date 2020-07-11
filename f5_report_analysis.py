@@ -8,13 +8,15 @@ parser.add_argument('f5_report', type=str, help="path to F5 Report")
 args = parser.parse_args()
 
 print(f"filename: {args.f5_report}")
-entries_to_look_in_logs = ["RAS error","A network error has happened",
-"OnError event","Failed to connect for downloading a PAC file", "Http status code",
-"Failed to prepare URL for fetching PAC file", "As this represents a potential security threat",
-"Policy check failed", "Enumeration failed. error", "RasDeviceName is empty", "VPN device not found",
-"Temporarily disconnecting","Open Session Failed"]
+
 
 def analyze_f5_report(f5_report):
+    entries_to_look_in_logs = ["RAS error","A network error has happened",
+    "OnError event","Failed to connect for downloading a PAC file", "Http status code",
+    "Failed to prepare URL for fetching PAC file", "As this represents a potential security threat",
+    "Policy check failed", "Enumeration failed. error", "RasDeviceName is empty", "VPN device not found",
+    "Temporarily disconnecting","Open Session Failed"]
+    
     session_ids = set() # Set for unique session ids
     timestamps = set() # Set for important timestamps
     vpn_fqdn_na_res = {} # Set dictionary for VPN fqdns and NA resources, client connects to
