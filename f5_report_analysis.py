@@ -70,13 +70,13 @@ def analyze_f5_report(f5_report):
                     else:
                         print(Fore.RED + line, Style.RESET_ALL)
                 elif 'name="tunnel_host0"' in line:
-                    m = re.search(r'.*, +value="([\w.]+)"', line)
+                    m = re.search(r'.*, +value="([\w\.-]+)"', line)
                     if m:
                         vpn_fqdn = m.group(1)
                         if date and na_res:
                             vpn_fqdn_na_res[date]= [vpn_fqdn, na_res]
                 elif 'name="ur_name"' in line:
-                    m = re.search(r'^([\d.-]+, *[\d:]+),.*, +value="([\w./-]+)"', line)
+                    m = re.search(r'^([\d.-]+, *[\d:]+),.*, +value="([\w\./-]+)"', line)
                     if m:
                         date = m.group(1)
                         na_res = m.group(2)
