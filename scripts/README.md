@@ -22,3 +22,11 @@ Example output:
 > Virtual Server: /Common/test_virtual_server_https<br/>
 > Access Policy: /Common/test_Access_Policy<br/>
 > Session-id: 65b9ac63<br/>
+<br/>
+### 2. **analyze_f5_report.py**
+
+This script is used for F5 Edge Client report analysis.<br/>
+More information about Edge Client report could be found in [K00819308: Gathering F5 VPN client logs](https://support.f5.com/csp/article/K00819308)
+
+
+
