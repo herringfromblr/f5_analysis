@@ -32,7 +32,7 @@ This script uses colorama Python module so it should be installed in advance:
 > pip install colorama
 
 Usage:
-> analyze_f5_report.py <f5 report>
+> analyze_f5_report.py \<f5 report\>
 
 Example:
 > analyze_f5_report.py f5_report.html
