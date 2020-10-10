@@ -17,15 +17,9 @@ Example:
 
 Example output:
 > 2020-01-01 00:00:31  /Common/test_Access_Policy : 65b9ac63 : Client_IP=192.168.1.168;State=;Country=;Continent=;Virtual_IP=10.1.110.1;Listener=/Common/test_virtual_server_https;Reputation=Unknown;
-
 > 2020-01-01 00:00:31  /Common/test_Access_Policy : 65b9ac63 : User_Name=test_user;
-
 > [...]
-
 > Hostname: LabBIG-IP-01.example.local
-
 > Virtual Server: /Common/test_virtual_server_https
-
 > Access Policy: /Common/test_Access_Policy
-
 > Session-id: 65b9ac63
