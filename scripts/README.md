@@ -40,3 +40,11 @@ Example:
 This script analyzes 2 log sections:
 - logterminal.txt
 - f5TunnelServer.txt 
+
+Short summary of events logged by the script:
+* session establishment process is logged
+* most important errors or critical events
+* RASMAN errors
+* errors in f5TunnelServer logs
+* session-ids seen in the F5 report
+* VPN destinations + NA resources user connected to
