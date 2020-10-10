@@ -28,9 +28,15 @@ Example output:
 
 This script is used for F5 Edge Client report analysis. More information about Edge Client report could be found in [K00819308: Gathering F5 VPN client logs](https://support.f5.com/csp/article/K00819308)
 
+This script uses colorama Python module so it should be installed in advance:
+> pip install colorama
+
 Usage:
 > analyze_f5_report.py <f5 report>
 
 Example:
 > analyze_f5_report.py f5_report.html
 
+This script analyzes 2 log sections:
+- logterminal.txt
+- f5TunnelServer.txt 
