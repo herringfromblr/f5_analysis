@@ -28,5 +28,9 @@ Example output:
 
 This script is used for F5 Edge Client report analysis. More information about Edge Client report could be found in [K00819308: Gathering F5 VPN client logs](https://support.f5.com/csp/article/K00819308)
 
+Usage:
+> analyze_f5_report.py <f5 report>
 
+Example:
+> analyze_f5_report.py f5_report.html
 
